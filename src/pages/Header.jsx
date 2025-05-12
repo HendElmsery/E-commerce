@@ -1,25 +1,30 @@
 import React from "react";
 import Navbar from "./Navbar";
-Navbar
+
 const Header = () => {
   return (
-    <div>
-    <Navbar/>
+    <>
+      <Navbar />
       <header
-        className="header bg-cover bg-center text-white py-5"
+        className="d-flex align-items-center justify-content-center text-white"
         style={{
-          backgroundImage: `url('../lola-rose-840tjesh9ww-unsplash.jpg')`, // Add your background image URL here
+          height: "75vh",
+          background: "linear-gradient(135deg, #6f42c1, #b97aff)",
         }}
       >
-        <div className="container text-center">
-          <h1 className="display-4">Welcome to My E-Commerce App</h1>
-          <p className="lead">Find the best products at amazing prices.</p>
-          {/* <a href="../lola-rose-840tjesh9ww-unsplash.jpg" className="btn btn-primary btn-lg">
-    Start Shopping
-  </a> */}
+        <div className="text-center px-4">
+          <h1 className="display-3 fw-bold mb-3">
+            Welcome to StyleHub
+          </h1>
+          <p className="lead mb-4">
+            Shop the latest fashion & tech at unbeatable prices.
+          </p>
+          <a href="#shop" className="btn btn-lg btn-light text-dark px-5 py-2 rounded-pill shadow-sm">
+            Explore Now
+          </a>
         </div>
       </header>
-    </div>
+    </>
   );
 };
 
