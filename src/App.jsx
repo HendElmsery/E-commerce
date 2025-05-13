@@ -9,19 +9,18 @@ import Navbar from "./pages/Navbar";
 import CheckOut from "./pages/CheckOut";
 import Confirmation from "./pages/Confirmation";
 
-
-
-
 function App() {
   return (
     <Router>
-      <Header /> 
+      <Header />
 
       <div className="container">
         <Routes>
           {/* Define each route here */}
+
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/shop/category/:category" element={<Shop />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/checkout" element={<CheckOut />} />
